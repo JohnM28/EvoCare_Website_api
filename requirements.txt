@@ -7,3 +7,5 @@ PyJWT~=1.7.1
 qrcode~=7.3.1
 django-material-admin~=1.8.6
 djangorestframework-jwt~=1.11.0
+django-cors-headers~=3.11.0
+psycopyg2<=2.9.3
