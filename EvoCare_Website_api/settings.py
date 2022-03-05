@@ -66,7 +66,7 @@ CORS_ALLOWED_ORIGINS = [
 "https://api.domain.com",
 "http://localhost:8080",
 "http://127.0.0.1:9000",
-"http://localhost:3000"
+"http://localhost:3001"
 ]
 CORS_ALLOWED_ORIGIN_REGEXES = [
 r"^https://\w+\.domain\.com$",
