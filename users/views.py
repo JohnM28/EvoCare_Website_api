@@ -96,8 +96,8 @@ def Take_Appointement(request):
 
 
 class FeedView(viewsets.ModelViewSet):
+    queryset = Feedback.objects.filter(status='Show')
     serializer_class = FeedSerializer
-    queryset = Feedback.objects.all()
 
 
 @api_view(['POST'])

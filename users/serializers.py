@@ -27,5 +27,5 @@ class AppointmentSerializer(serializers.ModelSerializer):
 class FeedSerializer(serializers.ModelSerializer):
     class Meta:
         model = Feedback
-        fields = ('user_id','user_name','feedback')
+        fields = ('user_name','feedback','status')
         

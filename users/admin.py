@@ -21,7 +21,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Feedback)
 class FeedbackAdmin(admin.ModelAdmin):
-    list_display = ('user_id', 'feedback')
+    list_display = ('user_name', 'feedback', 'status')
     icon_name = 'message'
 
 @admin.register(Qr)

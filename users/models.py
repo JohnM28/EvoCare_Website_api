@@ -36,9 +36,16 @@ class Cars(models.Model):
 
 
 class Feedback(models.Model):
-    user_id = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    options = (
+        ('Show', 'Show'),
+        ('Hide', 'Hide'),
+    )
+    # user_id = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     user_name = models.CharField(max_length=40, null=True)
     feedback = models.TextField()
+    status = models.CharField(max_length=11, choices=options, default='Hide')
+
+
 
     def _str_(self):
         return self.feedback
